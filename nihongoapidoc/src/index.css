@@ -1,0 +1,48 @@
+body {
+    user-select: none;
+    background-color: rebeccapurple;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Name {
+    color: white;
+    position: absolute;
+    left: 2%;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    animation-name: NameAmin;
+    animation-duration: .5s;
+}
+
+.NameC {
+    color: white;
+    position: absolute;
+    font-size: 2.5rem;
+    top: 52px;
+    text-transform: lowercase;
+    animation-name: NameAmin;
+    animation-duration: .5s;
+    width: 23rem;
+}
+
+.Pannel {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.PannelDiv {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 20%;
+}
+
+@keyframes NameAmin {
+    0% {
+        left: -20%;
+    }
+    100% {}
+}
