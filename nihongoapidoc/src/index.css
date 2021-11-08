@@ -33,17 +33,15 @@ body {
     background-color: rebeccapurple;
     border-radius: 10px;
     border: none;
-    width: 18rem;
+    width: 90%;
     cursor: pointer;
     font-size: 2rem;
     margin-bottom: 5px;
 }
 
 .btn:hover {
-    font-size: 2.2rem;
-    font-weight: bolder;
+    font-style: italic;
     color: white;
-    text-transform: uppercase;
     background-color: #845BAD;
 }
 
@@ -54,7 +52,7 @@ body {
     border-radius: 20px;
     text-align: center;
     list-style: none;
-    width: 20rem;
+    padding-bottom: 5%;
 }
 
 .Pannel {
@@ -77,4 +75,8 @@ body {
         left: -20%;
     }
     100% {}
+}
+
+.Preview {
+    padding-bottom: 5%;
 }

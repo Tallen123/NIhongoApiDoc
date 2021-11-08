@@ -1,7 +1,6 @@
 import './App.css';
 import Pannel from './Components/Pannel';
 import Testapiform from './Components/Testapiform'
-
 function App() {
   return (
     <div className="App">
