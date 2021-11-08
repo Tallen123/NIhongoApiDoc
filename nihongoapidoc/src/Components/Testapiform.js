@@ -7,11 +7,19 @@ function testApiForm({JSON}) {
                     <ol>
                         <div className="btnlist">
                         <label>Endpoints</label>
+                        <br /><br />
+                        <label htmlFor="urlPreview">URL</label>
+                        <br />
+                        <input type="text" id='urlPreview' value="https://tallen.pythonanywhere.com/static/" disabled="disabled" style={{width:'90%',fontSize:'1.4rem',border:'1px white solid',color:'black'}} />
+                        <br /><br />
                             <li><button className="btn" id="Hiragana" type="button" onClick={Hiragana}>Hiragana</button></li>
                             <li><button className="btn" id="Katakana" type="button" onClick={Katakana}>Katakana</button></li>
                             <li><button className="btn" id="Kanji-JLPT" type="button" onClick={Kanji_JLPT} >Kanji JLPT</button></li>
                             <li><button className="btn" id="Kanji-GRADES" type="button" onClick={Kanji_GRADES} >Kanji GRADES</button></li>
-                            <li><textarea style={{position:'relative',resize: 'none',fontSize:'1rem',fontWeight:'900',width:'90%'}} frameborder="0" name="" type='' id="Preview" rows="20">{JSON}</textarea></li>
+                            <li><button className="btn" id="Numbers" type="button" onClick={Numbersfunc} >Numbers</button></li>
+                            <li><button className="btn" id="grammar" type="button" onClick={grammarfunc} >grammar</button></li>
+                            <li><button className="btn" id="vocablulary" type="button" onClick={vocabularyfunc} >vocabulary</button></li>
+                            <li><textarea style={{position:'relative',resize: 'none',fontSize:'1rem',fontWeight:'900',width:'90%'}} frameBorder="0" name="" type='' id="Preview" rows="20">{JSON}</textarea></li>
                         </div>
                     </ol>
                 </div>
@@ -3747,20 +3755,48 @@ var alphabet = {
         }
     }
 }
+var grammar = {}
+
+var numbers ={}
+
+var vocablulary={}
+
+
 function Hiragana(){
     var Preview = document.getElementById("Preview");
     Preview.innerHTML = JSON.stringify(alphabet.Hiragana,undefined,4)
+
+    var urlPreview = document.getElementById("urlPreview")
+    urlPreview.value = "https://tallen.pythonanywhere.com/static/" + "Hiragana"
 }
 function Katakana(){
     var Preview = document.getElementById("Preview");
     Preview.innerHTML = JSON.stringify(alphabet.Katakana,undefined,4)
+    
+    var urlPreview = document.getElementById("urlPreview")
+    urlPreview.value = "https://tallen.pythonanywhere.com/static/" + "Katakana"
 }
 function Kanji_JLPT(){
     var Preview = document.getElementById("Preview");
     Preview.innerHTML = JSON.stringify(alphabet.Kanji.JLPT,undefined,4)
+        
+    var urlPreview = document.getElementById("urlPreview")
+    urlPreview.value = "https://tallen.pythonanywhere.com/static/" + "Kanji/JLPT"
 }
 function Kanji_GRADES(){
     var Preview = document.getElementById("Preview");
     Preview.innerHTML = JSON.stringify(alphabet.Kanji.GRADES,undefined,4)
+            
+    var urlPreview = document.getElementById("urlPreview")
+    urlPreview.value = "https://tallen.pythonanywhere.com/static/" + "Kanji/GRADES"
+}
+function Numbersfunc(){
+
+}
+function grammarfunc(){
+    
+}
+function vocabularyfunc(){
+    
 }
 export default testApiForm
