@@ -5,7 +5,7 @@ import Header from './Components/Header';
 function App() {
   return (
     <div>
-      <Header FontSize={'3rem'} FontFamily={'Ubuntu, sans-serif'} header={"Nihongo.net"}/>
+      <Header FontSize={'2rem'} FontFamily={'Ubuntu, sans-serif'} header={"Nihongo.net"}/>
     </div>
   );
 }

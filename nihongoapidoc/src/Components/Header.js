@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Header = ({header,FontFamily,FontSize}) => {
+const Header = ({header1,FontSize}) => {
     return (
     <header>
-        <h1 style={{fontFamily:FontFamily,fontSize:FontSize}}>{header}</h1>
+        <h1 class="Name" style={{fontSize:FontSize}}>{header1}</h1>
     </header>
     )
 }
